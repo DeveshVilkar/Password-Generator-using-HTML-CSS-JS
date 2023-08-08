@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="pass.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <div class="parent">
+
+        <h3>PASSWORD GENERATOR</h3>
+        <div class="child1">
+            <div id="input"></div>
+            <div id="symbol">
+                <i id="copy" class="fa-regular fa-clipboard"></i>
+            </div>
+            
+        </div>
+
+        <!-- /===================== -->
+
+        <div class="body">
+<!-- 1st rowwwwwwwwwwwwwwwwwwwwww -->
+            <div class="row">
+                <label >Password Length</label>
+                <input  id="num" type="number" min="5" max="15">
+            </div>
+           
+          
+<!-- 2nd rowwwwwwwwwwwwwwwwwwwwwww -->
+            <div class="row">
+                <label for="">Include Uppercase</label>
+                <input id="upper" type="checkbox" >
+            </div>
+            <!-- 3rd rowwwwwwwwwwwwww -->
+            <div class="row">
+                <label for="">Include Lowercase</label>
+                <input id="lower" type="checkbox" >
+            </div>
+            <!-- 4throwwwwwwwwwww -->
+            <div class="row">
+                <label for="">Include Number</label>
+                <input id="no" type="checkbox" >
+            </div>
+            <!--  -->
+            <div class="row">
+                <label for="">Include Symbols</label>
+                <input id="sym" type="checkbox" >
+            </div>
+            <!-- last row -->
+            <div class="lastrow">
+                <button id="generate">Generate Password</button>
+            </div>
+            
+
+        </div>
+
+
+    </div>
+    <script src="pass.js"></script>
+</body>
+</html>
